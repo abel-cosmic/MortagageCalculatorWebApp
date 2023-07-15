@@ -29,9 +29,9 @@ const CustomSlider: React.FC<SliderProps> = ({
       : `${text}: $ ${selectedValue}`;
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-md:flex-shrink">
       <div className="flex flex-row items-center mb-4 gap-4">
-        <h1 className="text-2xl font-semibold">{displayText}</h1>
+        <h1 className="text-2xl font-semibold max-md:text-sm">{displayText}</h1>
       </div>
       <input
         type="range"
@@ -39,7 +39,7 @@ const CustomSlider: React.FC<SliderProps> = ({
         max={maxValue}
         onChange={handleChange}
         step={stepping}
-        className="w-80 appearance-none h-3 rounded-lg bg-gray-300 outline-none"
+        className="w-80 appearance-none h-3 rounded-lg bg-gray-300 outline-none max-md:w-[12rem]"
         style={{
           background: `linear-gradient(to right, #8c56ff 0%, #8c56ff ${
             (selectedValue / maxValue) * 100
