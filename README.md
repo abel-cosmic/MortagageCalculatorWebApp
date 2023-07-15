@@ -35,7 +35,7 @@ Copy code
 4. Open the application in your browser at [http://localhost:3000](http://localhost:3000).
 
 ## Screenshots
-
+<img src="https://github.com/abel-cosmic/MortagageCalculatorWebApp/blob/main/public/screenshot" width=100%/>
 <!-- Add your screenshots here -->
 
 ## License
